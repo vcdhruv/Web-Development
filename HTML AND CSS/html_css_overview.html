@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Development</title>
+    <style>
+
+
+        /*Simple */
+      /* tag name selector */
+       h1 {
+        color: sandybrown;
+      } 
+      p {
+        background-color: lightcoral;
+        color: azure;
+      }
+
+      /* id selector */
+      #unique {
+        text-decoration: underline;
+      }
+
+      /* class selector */
+      .common {
+        background-color: lightgreen;
+      }
+      .common2 {
+        color: aqua;
+        background-color: black;
+      }
+      /* .common{
+            background-color: lightgreen;
+        } */
+
+        /* Combinator */
+        /* space selector */
+        /* it will taget all the p tag present in common class */
+        .common p{
+            color: blue;
+        }
+
+        /* immediate selector */
+        /* it will target the p tag that are present in common class and not all but that are present at an immediate scope in common class */
+        .common > p{
+            background-color: aquamarine;
+        }
+
+        /* immediate sibling selector */
+        /* it will select the immediate tags that are present at the same level and one nearest */
+        .common + div{
+            color: red;
+        }
+
+        /* general sibling selector */
+        /* it will select all the tags that are present at the same level */
+        .common ~ div{
+            color: aquamarine;
+        }
+
+
+        /* Attribute */
+        label[for]{
+            color: blue;
+        }
+        label[for="name"]{
+            background-color: red;
+        }
+        input[type]{
+            background-color: black;
+        }
+
+
+    </style>
+  </head>
+
+  <body>
+    <!-- Heading -->
+    <h1>Web Development Complete Course</h1>
+    <h2>Web Development Complete Course</h2>
+    <h3>Web Development Complete Course</h3>
+
+    <!-- Paragraph -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis esse dolor
+      debitis! Enim, fugit asperiores. Sequi blanditiis sit eius quisquam
+      mollitia odit accusamus doloribus aliquid? Itaque fuga delectus accusamus
+      repellendus!
+    </p>
+
+    <!-- Anchor -->
+    <a href="https://www.google.com">Go to google</a>
+
+    <!-- division -->
+    <div id="unique">
+      hello
+      <p>Developer</p>
+    </div>
+
+    <!-- write div*5 to get 5 div at a time -->
+    <div class="sibling">Hello this is sibling</div>
+    <div class="common common2">
+      Vishmay
+      <!-- write div.classname and press enter -->
+      <div class="something1">Something1</div>
+      <div class="something2">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+          distinctio aspernatur sit ab consectetur natus praesentium obcaecati
+          harum ipsa deserunt, necessitatibus inventore magnam vitae dolorum
+          exercitationem ad officia, veniam perferendis!
+        </p>
+      </div>
+      <div class="something3">Something3</div>
+      <p>Hello World</p>
+    </div>
+    <div class="sibling">I'm sibling</div>
+    <div class="common">Hello</div>
+    <div></div>
+    <div class="common2">Dhruv</div>
+
+    <!-- id must be unique for an element whereas class can be common for more than one element -->
+
+    <!-- unordered list -->
+    <ul>
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+    </ul>
+
+    <!-- ordered list -->
+    <ol>
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+    </ol>
+
+    <!-- span -->
+    <span>Content filling tag</span>
+
+    <!-- image -->
+    <img src="" alt="Some Image here" />
+
+    <div>
+        This is also sibling
+    </div>
+
+    <!-- form -->
+    <form>
+      <!-- write like input:text and press enter  -->
+      <label for="name">name</label>
+      <input type="text" name="" id="name" />
+
+      <label for="pass">email</label>
+      <input type="email" name="" id="pass" />
+
+      <label for="">password</label>
+      <input type="password" name="" id="" />
+
+      <label for="">number</label>
+      <input type="number" name="" id="" />
+    </form>
+  </body>
+</html>
